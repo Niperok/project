@@ -57,6 +57,7 @@ a {
     color: #a4a4a4;
     line-height: 32px;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 .header__form button{
@@ -492,6 +493,7 @@ select.header__select{
     border-radius: 23px 0px 0px 23px;
     border: 0px;
     padding-left: 28px;
+    padding-right: 28px;
 }
 
 .subscribe__button{
