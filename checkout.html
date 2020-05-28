@@ -66,7 +66,7 @@
                     <a href="index.html" class="menu__link">Home</a>
                 </li>
                 <li class="menu__list">
-                    <a href="#" class="menu__link menu__link_selected">Man</a>
+                    <a href="product.html" class="menu__link">Man</a>
                     <div class="drop">
                         <div class="megamenu">
                             <ul>
@@ -336,247 +336,58 @@
             <nav class="breadcrums">
                 <a href="index.html">home </a>/
                 <a href="product.html">man </a>/
-                <a href="product.html" class="breadcrums__selected">new arrivals </a>
+                <a href="shopping_cart.html" class="breadcrums__selected">new arrivals </a>
             </nav>
         </div>
-        <section class="catalog center">
-            <div class="catalog__left">
-                <details>
-                    <summary>category</summary>
-                    <a href="#">Accessories</a><br>
-                    <a href="#">Bags</a><br>
-                    <a href="#">Denim</a><br>
-                    <a href="#">Hoodies & Sweatshirts</a><br>
-                    <a href="#">Jackets & Coats</a><br>
-                    <a href="#">Pants</a><br>
-                    <a href="#">Polos</a><br>
-                    <a href="#">Shirts</a><br>
-                    <a href="#">Shoes</a><br>
-                    <a href="#">Shorts</a><br>
-                    <a href="#">Sweaters & Knits</a><br>
-                    <a href="#">T-Shirts</a><br>
-                    <a href="#">Tanks</a>
-                </details>
-                <details>
-                    <summary>brand</summary>
-                    <a href="#">Accessories</a><br>
-                    <a href="#">Bags</a><br>
-                    <a href="#">Denim</a><br>
-                    <a href="#">Hoodies & Sweatshirts</a><br>
-                    <a href="#">Jackets & Coats</a><br>
-                    <a href="#">Pants</a><br>
-                    <a href="#">Polos</a><br>
-                    <a href="#">Shirts</a><br>
-                    <a href="#">Shoes</a><br>
-                    <a href="#">Shorts</a><br>
-                    <a href="#">Sweaters & Knits</a><br>
-                    <a href="#">T-Shirts</a><br>
-                    <a href="#">Tanks</a>
-                </details>
-                <details>
-                    <summary>designer</summary>
-                    <a href="#">Accessories</a><br>
-                    <a href="#">Bags</a><br>
-                    <a href="#">Denim</a><br>
-                    <a href="#">Hoodies & Sweatshirts</a><br>
-                    <a href="#">Jackets & Coats</a><br>
-                    <a href="#">Pants</a><br>
-                    <a href="#">Polos</a><br>
-                    <a href="#">Shirts</a><br>
-                    <a href="#">Shoes</a><br>
-                    <a href="#">Shorts</a><br>
-                    <a href="#">Sweaters & Knits</a><br>
-                    <a href="#">T-Shirts</a><br>
-                    <a href="#">Tanks</a>
-                </details>
-            </div>
-            <div class="catalog__right">
-                <div class="filter">
-                    <div class="filter__top">
-                        <div class="filter__top_left">
-                            <h3>trending now</h3>
-                            <a href="#">Bohemian</a>|
-                            <a href="#">Floral</a>|
-                            <a href="#">Lace</a>
-                            <a href="#">Floral</a>|
-                            <a href="#">Lace</a>|
-                            <a href="#">Bohemian</a>
-                        </div>
-                        <div class="filter__top_middle">
-                            <h3>size</h3>
-                            <fieldset class="filter__fieldset">
-                                <input id='XXS' type="checkbox" class="checkbox">
-                                <label for="XXS">XXS<div class="tick">&#10004;</div></label>
-                                <input id='XS' type="checkbox" class="checkbox">
-                                <label for="XS">XS<div class="tick">&#10004;</div></label>
-                                <input id='S' type="checkbox" class="checkbox">
-                                <label for="S">S<div class="tick">&#10004;</div></label>
-                                <input id='M' type="checkbox" class="checkbox">
-                                <label for="M">M<div class="tick">&#10004;</div></label>
-                                <input id='L' type="checkbox" class="checkbox">
-                                <label for="L">L<div class="tick">&#10004;</div></label>
-                                <input id='XL' type="checkbox" class="checkbox">
-                                <label for="XL">XL<div class="tick">&#10004;</div></label>
-                                <input id='XXL' type="checkbox" class="checkbox">
-                                <label for="XXL">XXL<div class="tick">&#10004;</div></label>
-                            </fieldset>
-                        </div>
-                        <div class="filter__top_right">
-                            <h3>price</h3>
-                            <form oninput="result.value=(range.value)" action="#">
-                                <input id="range" type="range" min="0" max="700" value="400" step="1"
-                                    class="filter__range">
-                                <div class="filter__output">$53
-                                    <div>$<output name="result" for="range">400</output></div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="filter__bottom">
-                        <div class="filter__leftOfSelect">Sort By</div>
-                        <select name="Name" id="filter__sortBy" class="filter__select">
-                            <option value="0">Name</option>
-                        </select>
-                        <div class="filter__leftOfSelect">Show</div>
-                        <select name="09" id="filter__show" class="filter__select">
-                            <option value="0">09</option>
-                        </select>
-                    </div>
+        <main class="checkout center">
+            <h2 class="checkout__heading">01. Shipping Adress</h2>
+            <div class="checkout__form">
+                <div class="checkout__formHalf">
+                    <span class="checkout__headline">Check as a guest or register</span>
+                    <span class="checkout__text">Register with us for future convenience</span>
+                    <fieldset class="checkout__fieldset">
+                        <input id="guest" type="radio" name="registration" class="checkout__checkbox" checked>
+                        <label for="guest">
+                            checkout as guest
+                            <div class="checkout__tick"></div>
+                        </label> <br>
+                        <input id="register" type="radio" name="registration" class="checkout__checkbox">
+                        <label for="register">
+                            register
+                            <div class="checkout__tick"></div>
+                        </label>
+                    </fieldset>
+                    <span class="checkout__headline">register and save time!</span>
+                    <span class="checkout__text checkout__text_padding">Register with us for future convenience</span>
+                    <span class="checkout__text">&raquo; Fast and easy checkout</span>
+                    <span class="checkout__text">&raquo; Easy access to your order history and status</span>
+                    <a href="#" class="checkout__button">Continue</a>
                 </div>
-                <div class="product">
-                    <div class="product__single">
-                        <a href="#" class="product__img"><img src="img/product_9.png" alt="product_9"></a>
-                        <a href="#">
-                            <p>Mango People T-shirt</p>
-                        </a>
-                        <b>$52.00</b>
-                        <a href="#" class="product__cart">
-                            <img src="img/product_cart.png" alt="product__cart">Add to Cart
-                        </a>
+                <div class="checkout__formHalf">
+                    <span class="checkout__headline">Already registed?</span>
+                    <span class="checkout__text">Please log in below</span>
+                    <span class="checkout__text1">EMAIL ADDRESS <b>*</b></span>
+                    <input type="email" class="checkout__input">
+                    <span class="checkout__text1">PASSWORD <b>*</b></span>
+                    <input type="password" class="checkout__input">
+                    <span class="checkout__textRed">* Required Fileds</span>
+                    <div style="display: flex;">
+                        <a href="#" class="checkout__button">Log in</a>
+                        <a href="#" class="checkout__a">Forgot Password ?</a>
                     </div>
-                    <div class="product__single">
-                        <a href="#" class="product__img"><img src="img/product_10.png" alt="product_10"></a>
-                        <a href="#">
-                            <p>Mango People T-shirt</p>
-                        </a>
-                        <b>$52.00</b>
-                        <a href="#" class="product__cart">
-                            <img src="img/product_cart.png" alt="product__cart">Add to Cart
-                        </a>
-                    </div>
-                    <div class="product__single">
-                        <a href="#" class="product__img"><img src="img/product_3.png" alt="product_3"></a>
-                        <a href="#">
-                            <p>Mango People T-shirt</p>
-                        </a>
-                        <b>$52.00</b>
-                        <a href="#" class="product__cart">
-                            <img src="img/product_cart.png" alt="product__cart">Add to Cart
-                        </a>
-                    </div>
-                    <div class="product__single">
-                        <a href="#" class="product__img"><img src="img/product_11.png" alt="product_11"></a>
-                        <a href="#">
-                            <p>Mango People T-shirt</p>
-                        </a>
-                        <b>$52.00</b>
-                        <a href="#" class="product__cart">
-                            <img src="img/product_cart.png" alt="product__cart">Add to Cart
-                        </a>
-                    </div>
-                    <div class="product__single">
-                        <a href="#" class="product__img"><img src="img/product_8.png" alt="product_8"></a>
-                        <a href="#">
-                            <p>Mango People T-shirt</p>
-                        </a>
-                        <b>$52.00</b>
-                        <a href="#" class="product__cart">
-                            <img src="img/product_cart.png" alt="product__cart">Add to Cart
-                        </a>
-                    </div>
-                    <div class="product__single">
-                        <a href="#" class="product__img"><img src="img/product_12.png" alt="product_12"></a>
-                        <a href="#">
-                            <p>Mango People T-shirt</p>
-                        </a>
-                        <b>$52.00</b>
-                        <a href="#" class="product__cart">
-                            <img src="img/product_cart.png" alt="product__cart">Add to Cart
-                        </a>
-                    </div>
-                    <div class="product__single">
-                        <a href="#" class="product__img"><img src="img/product_6.png" alt="product_6"></a>
-                        <a href="#">
-                            <p>Mango People T-shirt</p>
-                        </a>
-                        <b>$52.00</b>
-                        <a href="#" class="product__cart">
-                            <img src="img/product_cart.png" alt="product__cart">Add to Cart
-                        </a>
-                    </div>
-                    <div class="product__single">
-                        <a href="#" class="product__img"><img src="img/product_13.png" alt="product_13"></a>
-                        <a href="#">
-                            <p>Mango People T-shirt</p>
-                        </a>
-                        <b>$52.00</b>
-                        <a href="#" class="product__cart">
-                            <img src="img/product_cart.png" alt="product__cart">Add to Cart
-                        </a>
-                    </div>
-                    <div class="product__single">
-                        <a href="#" class="product__img"><img src="img/product_14.png" alt="product_14"></a>
-                        <a href="#">
-                            <p>Mango People T-shirt</p>
-                        </a>
-                        <b>$52.00</b>
-                        <a href="#" class="product__cart">
-                            <img src="img/product_cart.png" alt="product__cart">Add to Cart
-                        </a>
-                    </div>
-                </div>
-                <div class="product__pages">
-                    <div class="product__page">
-                        <a href="#">&lt;</a>
-                        <a href="#" class="product__page_selected">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">10</a>
-                        <a href="#">&gt;</a>
-                    </div>
-                    <div class="product__view">View All</div>
                 </div>
             </div>
-        </section>
-        <section class="product__feature">
-            <div class="product__feature_p">
-                <img src="img/car.png" alt="car" class="product__feature_icon1">
-                <div class="product__feature_text">
-                    <b>Free Delivery</b>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                        extensive models.</p>
-                </div>
-            </div>
-            <div class="product__feature_p">
-                <img src="img/sale.png" alt="sale" class="product__feature_icon2">
-                <div class="product__feature_text">
-                    <b>Sales & discounts</b>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                        extensive models.</p>
-                </div>
-            </div>
-            <div class="product__feature_p">
-                <img src="img/corona.png" alt="corona" class="product__feature_icon3">
-                <div class="product__feature_text">
-                    <b>Quality assurance</b>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                        extensive models.</p>
-                </div>
-            </div>
-        </section>
+            <h2 class="checkout__heading">02. BILLING INFORMATION</h2>
+            <div class="checkout__form"></div>
+            <h2 class="checkout__heading">03. SHIPPING INFORMATION</h2>
+            <div class="checkout__form"></div>
+            <h2 class="checkout__heading">04. SHIPPING METHOD</h2>
+            <div class="checkout__form"></div>
+            <h2 class="checkout__heading">05. PAYMENT METHOD</h2>
+            <div class="checkout__form"></div>
+            <h2 class="checkout__heading">06. ORDER REVIEW</h2>
+            <div class="checkout__form"></div>
+        </main>
         <section class="subscribe center">
             <div class="subscribe__pic">
                 <img src="img/face.png" alt="face">
