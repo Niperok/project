@@ -308,7 +308,7 @@ body .button__buy:hover {
 .drop .megamenu__promo {
   height: 118px;
   width: 255px;
-  background-image: url(img/supersale.png);
+  background-image: url(../img/supersale.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,7 +441,7 @@ body .button__buy:hover {
   display: -ms-flexbox;
   display: flex;
   height: 613px;
-  background-image: url(img/promo.png);
+  background-image: url(../img/promo.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -534,7 +534,7 @@ body .button__buy:hover {
 .category .forMen {
   height: 542px;
   width: 560px;
-  background-image: url(img/forMen.png);
+  background-image: url(../img/forMen.png);
 }
 
 .category .forMen__text {
@@ -544,7 +544,7 @@ body .button__buy:hover {
 .category .accesories {
   height: 261px;
   width: 560px;
-  background-image: url(img/accesories.png);
+  background-image: url(../img/accesories.png);
 }
 
 .category .accesories__text {
@@ -554,7 +554,7 @@ body .button__buy:hover {
 .category .women {
   height: 261px;
   width: 560px;
-  background-image: url(img/women.png);
+  background-image: url(../img/women.png);
 }
 
 .category .women__text {
@@ -564,7 +564,7 @@ body .button__buy:hover {
 .category .forKids {
   height: 542px;
   width: 560px;
-  background-image: url(img/forKids.png);
+  background-image: url(../img/forKids.png);
 }
 
 .category .forKids__text {
@@ -665,7 +665,7 @@ body .button__buy:hover {
 
 .feature__banner {
   width: 767px;
-  background-image: url(img/feature_banner.png);
+  background-image: url(../img/feature_banner.png);
 }
 
 .feature__content {
@@ -745,7 +745,7 @@ body .button__buy:hover {
   display: -ms-flexbox;
   display: flex;
   height: 438px;
-  background-image: url(img/subscribe_img.png);
+  background-image: url(../img/subscribe_img.png);
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 109px;
@@ -1204,6 +1204,7 @@ body .button__buy:hover {
 
 .catalog .filter__fieldset {
   border: none;
+  position: relative;
 }
 
 .catalog .tick {
